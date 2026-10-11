@@ -1,0 +1,14 @@
+{
+  "name": "voltedge-fashion",
+  "version": "1.0.0",
+  "description": "متجر أزياء وإكسسوارات مصري راقٍ - VoltEdge Premium Fashion Store",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Static assets ready for GitHub Pages'"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

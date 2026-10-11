@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المجموعة الرجالية | فولت إدج (VoltEdge) للأزياء الفاخرة</title>
+  <meta name="description" content="تشكيلة أزياء رجالية فاخرة من الكتان الطبيعي والجلد الأصلي: بليزر صيفي، أحذية لوفر، وساعات كلاسيكية. شحن سريع لجميع محافظات مصر.">
+  <link rel="icon" type="image/png" href="./images/logo-icon.png">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="المجموعة الرجالية - فولت إدج (VoltEdge)">
+  <meta property="og:description" content="قصات عصرية بخامات الكتان والجلد الطبيعي لأناقة رجالية متكاملة. اطلب عبر واتساب مع الدفع عند الاستلام.">
+  <meta property="og:image" content="./images/hero-main.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Category Hero Banner -->
+    <header class="category-hero-banner">
+      <img src="./images/cat-men.jpg" alt="تشكيلة الرجال" class="category-hero-bg" />
+      <div class="category-hero-overlay"></div>
+      <div class="container category-hero-content">
+        <h1 class="category-hero-title" data-i18n="nav_men">المجموعة الرجالية</h1>
+        <p class="category-hero-subtitle" id="cat-banner-subtitle">
+          قصات عصرية بخامات الكتان والجلد الطبيعي لأناقة متكاملة
+        </p>
+      </div>
+    </header>
+
+    <!-- Products & Filter Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter & Sort Bar -->
+        <div class="filter-bar">
+          <div class="filter-count" id="items-count-display">
+            3 قطع متوفرة
+          </div>
+          <div class="filter-sort-wrap">
+            <label for="sort-select" class="filter-sort-label" data-i18n="sort_label">ترتيب حسب:</label>
+            <select id="sort-select" class="filter-select">
+              <option value="default" data-i18n="sort_default">المقترح افتراضياً</option>
+              <option value="price-low" data-i18n="sort_price_low">السعر: من الأقل للأعلى</option>
+              <option value="price-high" data-i18n="sort_price_high">السعر: من الأعلى للأقل</option>
+              <option value="rating" data-i18n="sort_rating">الأعلى تقييماً</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="category-products-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script type="module">
+    import { PRODUCTS, CATEGORIES } from './js/data.js';
+    import { getCurrentLang, t, renderProductCard, bindProductCardColors } from './js/main.js';
+
+    const categoryId = 'men';
+    const productIds = CATEGORIES[categoryId].productIds;
+
+    function renderCategoryPage() {
+      const lang = getCurrentLang();
+      const sortSelect = document.getElementById('sort-select');
+      const sortValue = sortSelect ? sortSelect.value : 'default';
+
+      // Update banner subtitle
+      const bannerSub = document.getElementById('cat-banner-subtitle');
+      if (bannerSub) {
+        bannerSub.textContent = lang === 'en' ? CATEGORIES[categoryId].subtitle_en : CATEGORIES[categoryId].subtitle_ar;
+      }
+
+      // Filter products
+      let list = PRODUCTS.filter(p => productIds.includes(p.id));
+
+      // Sorting
+      if (sortValue === 'price-low') {
+        list.sort((a, b) => a.price - b.price);
+      } else if (sortValue === 'price-high') {
+        list.sort((a, b) => b.price - a.price);
+      } else if (sortValue === 'rating') {
+        list.sort((a, b) => b.rating - a.rating);
+      }
+
+      // Count
+      const countEl = document.getElementById('items-count-display');
+      if (countEl) {
+        countEl.textContent = `${list.length} ${t('items_count', lang)}`;
+      }
+
+      // Render cards
+      const container = document.getElementById('category-products-grid');
+      if (container) {
+        container.innerHTML = list.map(p => renderProductCard(p, lang)).join('');
+        bindProductCardColors();
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCategoryPage();
+      const sortSelect = document.getElementById('sort-select');
+      if (sortSelect) {
+        sortSelect.addEventListener('change', renderCategoryPage);
+      }
+    });
+
+    window.addEventListener('voltedge:langchange', renderCategoryPage);
+  </script>
+</body>
+</html>

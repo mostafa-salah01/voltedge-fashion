@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل القطعة | فولت إدج (VoltEdge) للأزياء الفاخرة</title>
+  <meta name="description" content="تفاصيل القطعة الفاخرة من خامات الكتان والحرير والجلد الطبيعي. اطلب مباشرة عبر واتساب مع المعاينة عند الاستلام وشحن لجميع محافظات مصر.">
+  <link rel="icon" type="image/png" href="./images/logo-icon.png">
+  
+  <meta property="og:type" content="product">
+  <meta property="og:title" id="og-title" content="تفاصيل المنتج - فولت إدج">
+  <meta property="og:description" id="og-desc" content="قطعة صيفية فاخرة من فولت إدج. اطلب عبر واتساب.">
+  <meta property="og:image" id="og-image" content="./images/hero-main.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="application/ld+json" id="product-schema-json">{}</script>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb" id="breadcrumb-container">
+        <a href="./index.html" data-i18n="nav_home">الرئيسية</a>
+        <span>/</span>
+        <a href="./men.html" id="breadcrumb-category">التشكيلة</a>
+        <span>/</span>
+        <span id="breadcrumb-product-name" style="font-weight: 700; color: var(--color-text);">المنتج</span>
+      </nav>
+
+      <!-- Main Product Details Layout -->
+      <div class="product-detail-layout" id="product-details-container">
+        
+        <!-- Gallery Column -->
+        <div class="product-gallery">
+          <div class="product-gallery-main img-fallback-wrapper">
+            <img 
+              id="detail-main-img" 
+              src="./images/hero-main.jpg" 
+              alt="صورة المنتج" 
+              onerror="this.onerror=null; this.src='./images/hero-main.jpg';"
+            />
+          </div>
+          <!-- Thumbnails Row -->
+          <div class="product-gallery-thumbs" id="detail-thumbs-container"></div>
+        </div>
+
+        <!-- Product Information Column -->
+        <div class="product-info-panel">
+          <h1 class="product-detail-title" id="detail-title">اسم المنتج</h1>
+          
+          <div class="product-detail-rating">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-gold-star)" color="var(--color-gold-star)" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span style="font-weight: 700; color: var(--color-text); font-size: 1.05rem;" id="detail-rating-score">5.0</span>
+            <span id="detail-reviews-count">(48 تقييم)</span>
+          </div>
+
+          <div class="product-detail-price">
+            <span id="detail-price-number">2,450</span>
+            <span class="product-price-currency" id="detail-currency">ج.م</span>
+          </div>
+
+          <p class="product-detail-desc" id="detail-desc">
+            وصف المنتج وخاماته الطبيعية الفاخرة وتفاصيل تصميمه الراقي.
+          </p>
+
+          <!-- Color Selection -->
+          <div class="option-group" id="detail-color-group">
+            <div class="option-group-label">
+              <span><span data-i18n="color_label">اللون:</span> <strong id="detail-selected-color-label">بيج</strong></span>
+            </div>
+            <div class="option-color-swatches" id="detail-colors-list"></div>
+          </div>
+
+          <!-- Size Selection -->
+          <div class="option-group" id="detail-size-group">
+            <div class="option-group-label">
+              <span><span data-i18n="size_label">المقاس:</span> <strong id="detail-selected-size-label">M</strong></span>
+              <button type="button" class="btn-size-guide" id="btn-open-size-modal" data-i18n="size_guide">دليل المقاسات</button>
+            </div>
+            <div class="sizes-list" id="detail-sizes-list"></div>
+          </div>
+
+          <!-- Big WhatsApp Order CTA -->
+          <div>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-large" id="detail-btn-whatsapp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span data-i18n="order_via_whatsapp">اطلب عبر واتساب</span>
+            </a>
+          </div>
+
+          <!-- Service Guarantee Checklist -->
+          <div class="guarantee-box">
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              <span data-i18n="in_stock_eg">متوفر للشحن الفوري لجميع محافظات مصر (2 - 4 أيام عمل)</span>
+            </div>
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              <span data-i18n="inspection_guarantee">معاينة مجانية عند الاستلام قبل السداد</span>
+            </div>
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              <span data-i18n="cash_on_delivery">الدفع عند الاستلام متاح نقداً للمندوب</span>
+            </div>
+          </div>
+
+          <!-- Material & Craftsmanship Specs -->
+          <div class="material-specs-box">
+            <div class="material-specs-title" data-i18n="product_features_title">مواصفات الخامة والتصنيع:</div>
+            <div class="material-specs-text" id="detail-material-specs">
+              100% كتان طبيعي نقي عالي الجودة
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Similar Products Section -->
+      <section style="margin-block-start: 5rem;">
+        <div class="section-header text-center">
+          <h2 class="section-title" data-i18n="similar_products">منتجات قد تنال إعجابك</h2>
+        </div>
+        <div class="products-grid" id="similar-products-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Size Guide Modal -->
+  <div class="modal-overlay" id="size-modal" role="dialog" aria-modal="true" aria-labelledby="modal-size-title">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" id="btn-close-size-modal" aria-label="إغلاق">&times;</button>
+      <h2 style="font-size: 1.35rem; font-weight: 800; margin-block-end: 0.5rem;" id="modal-size-title">دليل المقاسات المعتمد (VoltEdge)</h2>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-block-end: 1rem;">
+        جميع القياسات بالسنتيمتر (cm) ومطابقة للمواصفات القياسية.
+      </p>
+      
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>المقاس / Size</th>
+            <th>الصدر / Chest</th>
+            <th>الخصر / Waist</th>
+            <th>الكتف / Shoulder</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>S</strong></td>
+            <td>94 - 98 cm</td>
+            <td>78 - 82 cm</td>
+            <td>43 cm</td>
+          </tr>
+          <tr>
+            <td><strong>M</strong></td>
+            <td>99 - 104 cm</td>
+            <td>83 - 88 cm</td>
+            <td>45 cm</td>
+          </tr>
+          <tr>
+            <td><strong>L</strong></td>
+            <td>105 - 110 cm</td>
+            <td>89 - 94 cm</td>
+            <td>47 cm</td>
+          </tr>
+          <tr>
+            <td><strong>XL</strong></td>
+            <td>111 - 116 cm</td>
+            <td>95 - 100 cm</td>
+            <td>49 cm</td>
+          </tr>
+          <tr>
+            <td><strong>XXL</strong></td>
+            <td>117 - 122 cm</td>
+            <td>101 - 106 cm</td>
+            <td>51 cm</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-block-start: 1.5rem; text-align: center;">
+        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-block-end: 0.75rem;">
+          متردد بين مقاسين؟ فريقنا متاح على واتساب لمساعدتك في قياساتك الدقيقة فوراً!
+        </p>
+        <button type="button" class="btn-primary" id="modal-wa-help" style="padding: 0.55rem 1.5rem; font-size: 0.9rem; min-height: 40px;">
+          استشرنا بالمقاس على واتساب
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script type="module">
+    import { PRODUCTS, CATEGORIES, STORE_SETTINGS } from './js/data.js';
+    import { getCurrentLang, t, renderProductCard, bindProductCardColors, buildWhatsAppLink } from './js/main.js';
+
+    let currentProduct = null;
+    let selectedColor = null;
+    let selectedSize = null;
+
+    function getProductIdFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('id');
+    }
+
+    function initProductDetails() {
+      const lang = getCurrentLang();
+      const prodId = getProductIdFromUrl();
+      
+      currentProduct = PRODUCTS.find(p => p.id === prodId) || PRODUCTS[0];
+      selectedColor = (currentProduct.colors && currentProduct.colors.length > 0) ? currentProduct.colors[0] : null;
+      selectedSize = (currentProduct.hasSizes && currentProduct.sizes.length > 0) ? currentProduct.sizes[0] : null;
+
+      // 1. Meta & Title
+      const prodName = lang === 'en' ? currentProduct.name_en : currentProduct.name_ar;
+      document.title = `${prodName} | ${lang === 'en' ? STORE_SETTINGS.STORE_NAME_EN : STORE_SETTINGS.STORE_NAME_AR}`;
+      
+      const ogTitle = document.getElementById('og-title');
+      const ogDesc = document.getElementById('og-desc');
+      const ogImg = document.getElementById('og-image');
+      if (ogTitle) ogTitle.content = prodName;
+      if (ogDesc) ogDesc.content = lang === 'en' ? currentProduct.desc_en : currentProduct.desc_ar;
+      if (ogImg) ogImg.content = selectedColor ? selectedColor.image : currentProduct.colors[0]?.image;
+
+      // 2. Structured Data (Product Schema)
+      const schemaScript = document.getElementById('product-schema-json');
+      if (schemaScript) {
+        schemaScript.textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": prodName,
+          "image": selectedColor ? selectedColor.image : "./images/hero-main.jpg",
+          "description": lang === 'en' ? currentProduct.desc_en : currentProduct.desc_ar,
+          "offers": {
+            "@type": "Offer",
+            "price": currentProduct.price,
+            "priceCurrency": "EGP",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": currentProduct.rating,
+            "reviewCount": currentProduct.reviewCount
+          }
+        });
+      }
+
+      // 3. Breadcrumbs
+      const catObj = CATEGORIES[currentProduct.category] || CATEGORIES.men;
+      const breadCat = document.getElementById('breadcrumb-category');
+      const breadName = document.getElementById('breadcrumb-product-name');
+      if (breadCat) {
+        breadCat.href = catObj.link;
+        breadCat.textContent = lang === 'en' ? catObj.name_en : catObj.name_ar;
+      }
+      if (breadName) {
+        breadName.textContent = prodName;
+      }
+
+      // 4. Basic Details
+      const titleEl = document.getElementById('detail-title');
+      const scoreEl = document.getElementById('detail-rating-score');
+      const reviewsEl = document.getElementById('detail-reviews-count');
+      const priceEl = document.getElementById('detail-price-number');
+      const currencyEl = document.getElementById('detail-currency');
+      const descEl = document.getElementById('detail-desc');
+      const materialEl = document.getElementById('detail-material-specs');
+
+      if (titleEl) titleEl.textContent = prodName;
+      if (scoreEl) scoreEl.textContent = currentProduct.rating.toFixed(1);
+      if (reviewsEl) reviewsEl.textContent = `(${currentProduct.reviewCount} ${t('reviews_count', lang)})`;
+      if (priceEl) priceEl.textContent = Number(currentProduct.price).toLocaleString();
+      if (currencyEl) currencyEl.textContent = t('price_egp', lang);
+      if (descEl) descEl.textContent = lang === 'en' ? currentProduct.desc_en : currentProduct.desc_ar;
+      if (materialEl) materialEl.textContent = lang === 'en' ? currentProduct.material_en : currentProduct.material_ar;
+
+      // 5. Gallery & Thumbnails
+      updateMainImage(selectedColor ? selectedColor.image : STORE_SETTINGS.DEFAULT_FALLBACK_IMAGE);
+      renderThumbnails(lang);
+
+      // 6. Colors Swatches
+      renderColorSwatches(lang);
+
+      // 7. Sizes
+      renderSizes(lang);
+
+      // 8. Update WhatsApp CTA
+      updateWhatsAppCta();
+
+      // 9. Similar Products Grid
+      renderSimilarProducts(lang);
+    }
+
+    function updateMainImage(src) {
+      const mainImg = document.getElementById('detail-main-img');
+      if (mainImg) {
+        mainImg.style.opacity = '0.7';
+        mainImg.src = src;
+        mainImg.onload = () => { mainImg.style.opacity = '1'; };
+      }
+    }
+
+    function renderThumbnails(lang) {
+      const thumbsContainer = document.getElementById('detail-thumbs-container');
+      if (!thumbsContainer) return;
+      if (!currentProduct.colors || currentProduct.colors.length <= 1) {
+        thumbsContainer.style.display = 'none';
+        return;
+      }
+      
+      thumbsContainer.style.display = 'flex';
+      thumbsContainer.innerHTML = currentProduct.colors.map(col => {
+        const isActive = selectedColor && selectedColor.id === col.id ? 'active' : '';
+        const colTitle = lang === 'en' ? col.name_en : col.name_ar;
+        return `
+          <button type="button" class="gallery-thumb-btn ${isActive}" data-color-id="${col.id}" aria-label="${colTitle}">
+            <img src="${col.image}" alt="${colTitle}" loading="lazy" />
+          </button>
+        `;
+      }).join('');
+
+      thumbsContainer.querySelectorAll('.gallery-thumb-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const colId = btn.getAttribute('data-color-id');
+          selectColorById(colId);
+        });
+      });
+    }
+
+    function renderColorSwatches(lang) {
+      const colorGroup = document.getElementById('detail-color-group');
+      const colorsList = document.getElementById('detail-colors-list');
+      const colorLabel = document.getElementById('detail-selected-color-label');
+      
+      if (!currentProduct.colors || currentProduct.colors.length === 0) {
+        if (colorGroup) colorGroup.style.display = 'none';
+        return;
+      }
+
+      if (colorGroup) colorGroup.style.display = 'block';
+      if (colorLabel && selectedColor) {
+        colorLabel.textContent = lang === 'en' ? selectedColor.name_en : selectedColor.name_ar;
+      }
+
+      if (colorsList) {
+        colorsList.innerHTML = currentProduct.colors.map(col => {
+          const isActive = selectedColor && selectedColor.id === col.id ? 'active' : '';
+          const colName = lang === 'en' ? col.name_en : col.name_ar;
+          return `
+            <button type="button" 
+              class="detail-color-circle ${isActive}" 
+              style="background-color: ${col.hex};" 
+              data-color-id="${col.id}"
+              aria-label="${colName}"
+              title="${colName}">
+            </button>
+          `;
+        }).join('');
+
+        colorsList.querySelectorAll('.detail-color-circle').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const colId = btn.getAttribute('data-color-id');
+            selectColorById(colId);
+          });
+        });
+      }
+    }
+
+    function selectColorById(colId) {
+      const lang = getCurrentLang();
+      const col = currentProduct.colors.find(c => c.id === colId);
+      if (!col) return;
+      selectedColor = col;
+
+      // Update image
+      updateMainImage(col.image);
+
+      // Update swatches active state
+      document.querySelectorAll('.detail-color-circle').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-color-id') === colId);
+      });
+
+      // Update thumbnails active state
+      document.querySelectorAll('.gallery-thumb-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-color-id') === colId);
+      });
+
+      // Update label
+      const colorLabel = document.getElementById('detail-selected-color-label');
+      if (colorLabel) {
+        colorLabel.textContent = lang === 'en' ? col.name_en : col.name_ar;
+      }
+
+      updateWhatsAppCta();
+    }
+
+    function renderSizes(lang) {
+      const sizeGroup = document.getElementById('detail-size-group');
+      const sizesList = document.getElementById('detail-sizes-list');
+      const sizeLabel = document.getElementById('detail-selected-size-label');
+
+      if (!currentProduct.hasSizes || !currentProduct.sizes || currentProduct.sizes.length === 0) {
+        if (sizeGroup) sizeGroup.style.display = 'none';
+        selectedSize = null;
+        return;
+      }
+
+      if (sizeGroup) sizeGroup.style.display = 'block';
+      if (sizeLabel && selectedSize) {
+        sizeLabel.textContent = selectedSize;
+      }
+
+      if (sizesList) {
+        sizesList.innerHTML = currentProduct.sizes.map(sz => {
+          const isActive = selectedSize === sz ? 'active' : '';
+          return `
+            <button type="button" class="btn-size ${isActive}" data-size="${sz}">${sz}</button>
+          `;
+        }).join('');
+
+        sizesList.querySelectorAll('.btn-size').forEach(btn => {
+          btn.addEventListener('click', () => {
+            selectedSize = btn.getAttribute('data-size');
+            sizesList.querySelectorAll('.btn-size').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            if (sizeLabel) sizeLabel.textContent = selectedSize;
+            updateWhatsAppCta();
+          });
+        });
+      }
+    }
+
+    function updateWhatsAppCta() {
+      const btn = document.getElementById('detail-btn-whatsapp');
+      if (btn && currentProduct) {
+        btn.href = buildWhatsAppLink({
+          product: currentProduct,
+          color: selectedColor,
+          size: selectedSize
+        });
+      }
+    }
+
+    function renderSimilarProducts(lang) {
+      const container = document.getElementById('similar-products-grid');
+      if (!container) return;
+      const similar = PRODUCTS.filter(p => p.id !== currentProduct.id).slice(0, 4);
+      container.innerHTML = similar.map(p => renderProductCard(p, lang)).join('');
+      bindProductCardColors();
+    }
+
+    // Modal listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      initProductDetails();
+
+      const modal = document.getElementById('size-modal');
+      const btnOpen = document.getElementById('btn-open-size-modal');
+      const btnClose = document.getElementById('btn-close-size-modal');
+      const btnHelp = document.getElementById('modal-wa-help');
+
+      if (btnOpen && modal) {
+        btnOpen.addEventListener('click', () => modal.classList.add('is-active'));
+      }
+      if (btnClose && modal) {
+        btnClose.addEventListener('click', () => modal.classList.remove('is-active'));
+      }
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.remove('is-active');
+        });
+      }
+      if (btnHelp) {
+        btnHelp.addEventListener('click', () => {
+          window.open(`https://wa.me/${STORE_SETTINGS.WHATSAPP_NUMBER}?text=${encodeURIComponent('مرحباً فولت إدج، أود الاستفسار والمساعدة في المقاس المناسب لي.')}`, '_blank');
+        });
+      }
+    });
+
+    window.addEventListener('voltedge:langchange', initProductDetails);
+  </script>
+</body>
+</html>

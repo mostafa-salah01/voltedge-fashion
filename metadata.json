@@ -1,0 +1,6 @@
+{
+  "name": "VoltEdge Fashion",
+  "description": "متجر أزياء وإكسسوارات مصري راقٍ - VoltEdge Premium Egyptian Fashion & Accessories",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
